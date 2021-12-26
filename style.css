@@ -6,7 +6,8 @@ h4 {font-size: 14px;}
 
 body {
     font-family: "Cabin"; 
-    color:rgb(50, 50, 50); 
+    color:rgb(50, 50, 50);
+    background-color: rgb(250, 250, 248);
     font-size: 14px; 
     padding-left: 10px;
 }
@@ -15,7 +16,7 @@ body {
 	display: inline-block;
 	max-width: 1015px;
 	box-sizing: border-box;
-	font-size: 11px;
+	font-size: 12px;
 	font-weight: 400;
 	letter-spacing:	 0.08em;
 	line-height: 14px;
@@ -36,3 +37,8 @@ body {
     padding-bottom: 6px;
     vertical-align: top;
 }
+
+.link:link {color: rgb(153, 153, 153);}
+.link:visited {color: rgb(153, 153, 153);}
+.link:hover {color: rgb(50, 50, 50);}
+.link:active {color: rgb(220, 40, 40);}
