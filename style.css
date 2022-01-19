@@ -42,3 +42,16 @@ body {
 .link:visited {color: rgb(153, 153, 153);}
 .link:hover {color: rgb(50, 50, 50);}
 .link:active {color: rgb(220, 40, 40);}
+
+.flex-container {
+	display:flex;
+}
+
+.flex-container #project-menu {
+	width: 80px;
+	flex: 1 1 auto;
+}
+
+.flex-container #project-feature {
+	flex: 8 1 auto;
+}

@@ -31,15 +31,29 @@
         </div>
     </div>
     
-    <div>
-    <p>Browse projects:
-        <ul>
-            <li>changi airport traffic</li>
-        </ul>
-    </p>
-    <iframe width="100%" height="402" frameborder="0"
-  src="https://observablehq.com/embed/6a6f0bf9657ec652?cells=chartTotal"></iframe>
+    <div class="flex-container">
+
+        <div id="project-menu">
+        <p>Browse projects:
+            <ul>
+                <li>changi airport traffic</li>
+            </ul>
+        </p>
+        </div>
+
+        <div id="project-feature">
+            <script type="module">
+                import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+                import define from "https://api.observablehq.com/d/6a6f0bf9657ec652.js?v=3";
+                new Runtime().module(define, name => {
+                  if (name === "chartTotal") return new Inspector(document.querySelector("#observablehq-chartTotal-34db5b08"));
+                });
+                </script>
+        <!--- <iframe width="100%" height="402" frameborder="0"
+    src="https://observablehq.com/embed/6a6f0bf9657ec652?cells=chartTotal"></iframe>--->
+        </div>
     </div>
+
     <p>Notes:
         <br> Source data is limited to traffic to and from 11 countries (China, France, Germany, Hong Kong, Indonesia, Japan, Malaysia, Philippines, Thailand, United Kingdom & Vietnam) and excludes transit passengers who had continued on the same flight. 
         <br> Prior to Jul 1981, Singapore's civilian airport was Paya Lebar Airport. From Jan 1989, data is from Changi Airport only.
