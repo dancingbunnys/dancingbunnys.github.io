@@ -58,6 +58,13 @@ body {
 	flex: 8 1 auto;
 }
 
+/*project menu*/
+
+.project-menu ul {
+	list-style-position: inside; 
+	padding-left: 0;
+}
+
 /*source: https://labs.jensimmons.com/2017/01-011.html*/
 
 .block-sizes {
@@ -70,100 +77,100 @@ body {
 		list-style: none;
 	}
 
-	ul {
+.block-sizes	ul {
 		display: grid;
 		clip-path: polygon(10px 6px, calc(100% - 7px) 6px, calc(100% - 7px) calc(100% - 6px), 10px calc(100% - 6px));
 		grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
 		grid-auto-rows: 80px;
 		grid-auto-flow: dense;
 	}
-	li {
+.block-sizes	li {
 		height: 100%;
 		/* border: 6px solid rgb(50, 50, 50); */
 		background-size: cover;
 	}
-	li:nth-child(1) {
+	.block-sizes li:nth-child(1) {
 		grid-column: span 2;
 		background-color: #E5EEEB; 
 	}
-	li:nth-child(2) {
+	.block-sizes li:nth-child(2) {
 		grid-column: span 3;
 		background-color: #F2E7D5;
 	}
-	li:nth-child(3) {
+	.block-sizes li:nth-child(3) {
 		grid-column: span 2;
 		background-color: #F2C968;
 	}
-	li:nth-child(4) {
+	.block-sizes li:nth-child(4) {
 		grid-row: span 6;
 		background-color: #FCFDE7;
 	}
-	li:nth-child(5) {
+	.block-sizes li:nth-child(5) {
 		grid-row: span 2;
 		background-color: #FBFDE7;
 	}
-	li:nth-child(6) {
+	.block-sizes li:nth-child(6) {
 		grid-column: span 4;
 		grid-row: span 4;
 		background-color: #D62D24;
 	}
-	li:nth-child(7) {
+	.block-sizes li:nth-child(7) {
 		grid-row: span 2;
 		grid-column: span 2;
 		background-color: #EDCC6B;
 	}
-	li:nth-child(8) {
+	.block-sizes li:nth-child(8) {
 		grid-row: span 3;
 		background-color: #E1EAE5;
 	}
-	li:nth-child(9) {
+	.block-sizes li:nth-child(9) {
 		grid-row: span 2;
 		background-color: #DFE5D0;
 	}
-	li:nth-child(10) {
+	.block-sizes li:nth-child(10) {
 		grid-row: span 2;
 		background-color: #F2EEE2;
 	}
-	li:nth-child(11) {
+	.block-sizes li:nth-child(11) {
 		grid-row: span 2;
 		grid-column: span 2;
 		background-color: #130409;
 	}
-	li:nth-child(12) {
+	.block-sizes li:nth-child(12) {
 		grid-column: span 2;
 		background-color: #C0BFBA;
 	}
-	li:nth-child(13) {
+	.block-sizes li:nth-child(13) {
 		grid-column: span 2;
 		background-color: #D6DEE0;
 	}
-	li:nth-child(14) {
+	.block-sizes li:nth-child(14) {
 		grid-row: span 3;
 		background-color: #F4C65A;
 	}
-	li:nth-child(15) {
+	.block-sizes li:nth-child(15) {
 		grid-column: span 2;
 		background-color: #DEE2D4;
 	}
-	li:nth-child(16) {
+	.block-sizes li:nth-child(16) {
 		grid-row: span 2;
 		grid-column: span 2;
 		background-color: #241785;
 	}
-	li:nth-child(17) {
+	.block-sizes li:nth-child(17) {
 		grid-row: span 3;
 		background-color: #D73630;
 	}
-	li:nth-child(18) {
+	.block-sizes li:nth-child(18) {
 		grid-column: span 2;
 		grid-row: span 2;
 		background-color: #E3DED9;
 	}
-	li:nth-child(19) {
+	.block-sizes li:nth-child(19) {
 		grid-column: span 2;
 		background-color: #0B0205;
 	}
-	li:nth-child(20) {
+	.block-sizes li:nth-child(20) {
 		grid-column: span 4;
 		background-color: #E0E0DF;
 	}
